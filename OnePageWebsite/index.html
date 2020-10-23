@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Koopa The Tortoise </title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/lightboxStyle.css">
+        <script src="./JavaScript/OnePageWebsite.js"></script>
+
+	</head>
+	<body>
+	<!-- NAV -->
+	<div class="wrap">
+		<div class="menu-container">
+			<ul class="menu">
+				<a href="#home"><li>HOME</li></a>
+				<a href="#photos"><li>PHOTOS</li></a>
+				<a href="#videos"><li>VIDEOS</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
+			</ul>
+		</div>
+	</div>
+	<!-- END NAV -->
+	
+	<!-- HOME -->
+	<div id="home">
+		<div class="container">
+			<div class="text-center">
+				<span class="head-main">
+					Koopa The Tortoise
+                </span>
+                <p >This my tortoise Koopa!  He has been with me since 2006.  <br>I have been making him halloween costumes since 2013.  
+					<br>Here are some photos and videos of Koopa all dressed up.  Hope you enjoy!</p>
+			</div>
+		</div>
+	</div>
+    <!-- END HOME-->
+
+	
+	<!-- PHOTOS -->
+    <section id="photos">
+        <div class="container">
+            <h1>Photos</h1>
+            <div class="flex-container">
+                <!--Photo container-->
+                <div class="photo-container">
+                    <div onclick="openModal();currentSlide(1)" class="photo">
+                        <img src="./images/thumbs/thumb1.jpg" alt="BB8 Costume" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">BB8 Costume</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div onclick="openModal();currentSlide(2)" class="photo-container">
+                    <div class="photo">
+                        <img src="./images/thumbs/thumb2.jpg" alt="Pikachu Costume" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Pikachu Costume</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div onclick="openModal();currentSlide(3)" class="photo-container">
+                    <div class="photo">
+                        <img src="./images/thumbs/thumb3.jpg" alt="Painting of Bowser Costume" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Painting of Bowser Costume</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div class="photo-container">
+                    <div onclick="openModal();currentSlide(4)" class="photo">
+                        <img src="./images/thumbs/thumb4.jpg" alt="Nibbler from Futurama" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Nibbler from Futurama</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div class="photo-container">
+                    <div onclick="openModal();currentSlide(5)" class="photo">
+                        <img src="./images/thumbs/thumb5.jpg" alt="Bowser Costume" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Bowser Costume</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div class="photo-container">
+                    <div onclick="openModal();currentSlide(6)" class="photo">
+                        <img src="./images/thumbs/thumb6.jpg" alt="Ladybug Costume" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Ladybug Costume</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div onclick="openModal();currentSlide(7)" class="photo-container">
+                    <div class="photo">
+                        <img src="./images/thumbs/thumb7.jpg" alt="Rapheal" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Rapheal, Teenage Mutant Ninja Turtles</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div onclick="openModal();currentSlide(8)" class="photo-container">
+                    <div class="photo">
+                        <img src="./images/thumbs/thumb8.jpg" alt="Seahawks Hat" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Seahawks Hat</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+
+                <!--Photo container-->
+                <div onclick="openModal();currentSlide(9)" class="photo-container" >
+                    <div class="photo">
+                        <img src="./images/thumbs/thumb9.jpg" alt="Clay Koopa" >
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Clay Koopa</h3>
+                            <h2 class="white-head" >Click to enlarge!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Photo container-->
+            </div>
+        </div>
+    </section>
+    <!-- END PHOTOS -->
+    
+    <!-- light box section-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numtext">1 / 9</div>
+                <img src="./images/thumbs/thumb1.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">2 / 9</div>
+                <img src="./images/thumbs/thumb2.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">3 / 9</div>
+                <img src="./images/thumbs/thumb3.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">4 / 9</div>
+                <img src="./images/thumbs/thumb4.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">1 / 5</div>
+                <img src="./images/thumbs/thumb5.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">6 / 9</div>
+                <img src="./images/thumbs/thumb6.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">1 / 7</div>
+                <img src="./images/thumbs/thumb7.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">1 / 8</div>
+                <img src="./images/thumbs/thumb8.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numtext">9 / 9</div>
+                <img src="./images/thumbs/thumb9.jpg" alt="" style="width: 100%;">
+            </div>
+
+                <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+                <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb1.jpg" onclick="currentSlide(1)" alt="BB8 Costume">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb2.jpg" onclick="currentSlide(2)" alt="Pikachu Costume">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb3.jpg" onclick="currentSlide(3)" alt="Painting of Bowser Costume">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb4.jpg" onclick="currentSlide(4)" alt="Nibbler from Futurama">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb5.jpg" onclick="currentSlide(5)" alt="Bowser Costume">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb6.jpg" onclick="currentSlide(6)" alt="Ladybug Costume">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb7.jpg" onclick="currentSlide(7)" alt="Rapheal">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb8.jpg" onclick="currentSlide(8)" alt="Seahawks Hat">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbs/thumb9.jpg" onclick="currentSlide(9)" alt="Clay Koopa">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- end light box section-->
+
+	<!-- VIDEOS -->
+	<section id="videos">
+		<div class="container">
+            <h1>Videos</h1>
+            <div class="video">
+                <div>
+                    <div>
+                        <iframe src="https://onedrive.live.com/embed?cid=AEA9ABBD68C4FB81&resid=AEA9ABBD68C4FB81%21269053&authkey=AE-y-Vqg6aG2H98" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen></iframe>					
+                    </div>
+                </div>
+    
+                <div>
+                    <div>
+                        <iframe src="https://onedrive.live.com/embed?cid=AEA9ABBD68C4FB81&resid=AEA9ABBD68C4FB81%21263810&authkey=AE7FbFcOGp-DWRM" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+			
+		</div>
+	</section>
+	<!-- END VIDEOS --> 
+	
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container">
+			<div >
+				<h1>Contact</h1>
+				<div class="contact">
+					<h2><span>Join our newsletter for more photos and updates!</span>
+					
+					</h2>
+					<p>
+						Please provide your contact information:
+					</p>
+					<div class="contact-form">
+						<form action="" method="post">
+                            <input class="contact" type="text" value="First Name">
+                            <input class="contact" type="text" value="First Name">
+                            <input class="contact" type="text" value="First Name">
+							<div>
+								<input type="submit" value="Submit">
+							</div>									
+						</form>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CONTACT -->
+	
+	<!-- FOOTER -->
+	<div>
+		<br>&nbsp;
+		www.koopathetoriose.com &nbsp;|&nbsp; &copy; 2020
+	</div id="footer">
+	<!-- END FOOTER -->
+	
+	</body>
+</html>
