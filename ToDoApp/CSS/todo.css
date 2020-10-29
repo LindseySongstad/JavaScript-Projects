@@ -1,0 +1,47 @@
+html {
+    font-family: "Avenir Next";
+    text-align: center;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-width: 500px;
+    margin: 0;
+}
+
+input { 
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 2px solid green;
+    display: block;
+    justify-content: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+footer {
+    border: 2px solid black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.remove {
+    padding-bottom: 5px;
+}

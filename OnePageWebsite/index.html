@@ -5,10 +5,15 @@
 		<meta charset="utf-8">
         <link rel="stylesheet" href="./CSS/style.css">
         <link rel="stylesheet" href="./CSS/lightboxStyle.css">
+        <link rel="stylesheet" href="./CSS/popupStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./JavaScript/OnePageWebsite.js"></script>
+        
 
 	</head>
 	<body>
+
+        <script>document.body.className += ' fade-out';</script>
 	<!-- NAV -->
 	<div class="wrap">
 		<div class="menu-container">
@@ -16,10 +21,24 @@
 				<a href="#home"><li>HOME</li></a>
 				<a href="#photos"><li>PHOTOS</li></a>
 				<a href="#videos"><li>VIDEOS</li></a>
-				<a href="#contact"><li>CONTACT</li></a>
+                <a href="#contact"><li>CONTACT</li></a>
+                <a onclick="openForm()"><li>NEWSLETTER</li></a>
 			</ul>
-		</div>
-	</div>
+        </div>
+       
+    </div>
+    <!--popup form-->
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Sign up for the Newsletter!</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 	<!-- END NAV -->
 	
 	<!-- HOME -->
@@ -265,7 +284,7 @@
 
     <!-- end light box section-->
 
-	<!-- VIDEOS -->
+	<!-- VIDEOS 
 	<section id="videos">
 		<div class="container">
             <h1>Videos</h1>
@@ -286,7 +305,7 @@
 			
 		</div>
 	</section>
-	<!-- END VIDEOS --> 
+	END VIDEOS --> 
 	
 	<!-- CONTACT -->
 	<section id="contact">
@@ -301,10 +320,13 @@
 						Please provide your contact information:
 					</p>
 					<div class="contact-form">
-						<form action="" method="post">
-                            <input class="contact" type="text" value="First Name">
-                            <input class="contact" type="text" value="First Name">
-                            <input class="contact" type="text" value="First Name">
+						<form action="" method="post" name="contactForm" onsubmit="return validateForm()">
+                            <label for="name">Name</label><br>
+                            <input class="contact" type="text" name="name" id="name" value=""><br>
+                            <label for="name">Email</label><br>
+                            <input class="contact" type="text" name="email" id="email" value=""><br>
+                            <label for="name">Phone Number</label><br>
+                            <input class="contact" type="text" name="phone" id="phone" value=""><br>
 							<div>
 								<input type="submit" value="Submit">
 							</div>									
@@ -315,13 +337,16 @@
 		</div>
 	</section>
 	<!-- END CONTACT -->
-	
+
 	<!-- FOOTER -->
 	<div>
 		<br>&nbsp;
 		www.koopathetoriose.com &nbsp;|&nbsp; &copy; 2020
 	</div id="footer">
-	<!-- END FOOTER -->
+    <!-- END FOOTER -->
+    <hr>  
+    <!-- keyframe-->
+    <div class="keyframe"></div>
 	
 	</body>
 </html>

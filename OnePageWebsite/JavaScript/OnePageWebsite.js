@@ -1,3 +1,10 @@
+// fade in
+$(function() {
+    $('body').removeClass('fade-out');
+}); 
+
+//MODAL LIGHTBOX
+
 function openModal() {
     document.getElementById("myModal").style.display = "block";
 }
@@ -34,4 +41,32 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// validate form
+
+function validateForm(){
+    var inputList = document.getElementsByTagName('input');
+    for(let i=0; i<inputList.length; i++){
+        var x = document.forms['contactForm'][i].value;
+        if (x=='') {
+            alert("All fields must be filled out");
+            return false;
+        }
+    }
+    var phoneNumber = document.getElementById('phone').value;
+    if (isNaN(phoneNumber)){
+        alert('Please enter a valid phone number');
+        return false;
+    }
+}
+
+// popup form
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+  
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
 }

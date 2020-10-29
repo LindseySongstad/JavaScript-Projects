@@ -5,9 +5,9 @@ function placeXorO(squareNumber) {
     if(!selectedSquares.some(element => element.includes(squareNumber))) {
         let select = document.getElementById(squareNumber);
         if (activePlayer === "X") {
-            select.style.backgroundImage = 'url("images/x.png")';
+            select.style.backgroundImage = 'url("images/x.jpg")';
         } else {
-            select.style.backgroundImage = 'url("images/o.png")';
+            select.style.backgroundImage = 'url("images/o.jpg")';
         }
         selectedSquares.push(squareNumber + activePlayer)
         checkWinConditions();
@@ -55,7 +55,7 @@ function checkWinConditions() {
     else if (arrayIncludes('6O','4O', '2O')) {drawWinLine(100,508,510,90);}
     else if (arrayIncludes('0O','4O', '8O')) {drawWinLine(100,100,520,520);}
     else if (selectedSquares.length >= 9) {
-        audio('./media/tie.mp3')
+        audio('./media/tie.mp3');
         setTimeout(function() {resetGame();}, 1000);
     }
 }
@@ -91,7 +91,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         c.moveTo(x1, y1);
         c.lineTo(x, y)
         c.lineWidth = 10;
-        c.strokeStyle = 'rgba(70,225,33,.8)'
+        c.strokeStyle = 'rgba(225,0,0,.8)'
         c.stroke();
         if (x1 <= x2 && y1 <= y2) {
             if (x < x2) { x += 10;}
