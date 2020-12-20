@@ -1,18 +1,18 @@
 function count() {
-    var par = "";
-    var num = 1;
+    var message = "";
+    let num = 1;
     while (num < 11) {
-        par+= "<br>" + num;
+        message+= "<br>" + num;
         num++;
     }
-   document.getElementById("counting").innerHTML = par;
+   document.getElementById("counting").innerHTML = message;
 };
 
 function arrayLoop() {
     var myList = ['one', 'two', 'three', 'four'];
-    par = '';
+    message = '';
     for ( var i=0; i < myList.length; i++){
-        par += myList[i] + "<br>"   
+        message += myList[i] + "<br>"   
     }
-    document.getElementById("array").innerHTML=par;
+    document.getElementById("array").innerHTML=message;
 }
